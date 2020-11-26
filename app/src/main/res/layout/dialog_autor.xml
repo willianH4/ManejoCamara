@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/colorToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorToolBar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Autor"
+                            android:fontFamily="cursive"
+                            android:textAlignment="center"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:background="@android:color/transparent"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            tools:ignore="RtlCompat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".90"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_marginRight="0dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/BtnCerrarAutor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_close2"
+                            android:layout_marginRight="7dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/circulo2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF" >
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardElevation="5dp"
+                            card_view:cardCornerRadius="3dp"
+                            android:layout_margin="0dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp"
+                                android:gravity="center"
+                                android:background="#E7EAEB" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="#FCF9F9"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_details"/>
+
+                                    <TextView
+                                        android:id="@+id/tvInfo3"
+                                        android:textColor="@color/black"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Información Desarrollador"
+                                        android:padding="5dp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                                <ImageView
+                                    android:id="@+id/foto"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/foto"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_doc_dr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@android:style/TextAppearance"
+                                    android:text="Autor: Willian Adalberto Hernandez\nE-mail: willian.hernandez19@itca.edu.sv\nTeléfono: (+503)6155-5490"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/tv_doc_dr1"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_width="wrap_content"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:layout_height="wrap_content"
+                                    android:text="Educación Superior:"
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="15dp"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/tv_nombre_dr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@android:style/TextAppearance"
+                                    android:text="Téc. en Ing. de sistemas informaticos."
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    />
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/tiEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:textColorHint="@color/colorAccent">
+
+                                <EditText
+                                    android:id="@+id/et_email1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:hint="Introduzca E-mail del Responsable"
+                                    android:textSize="12dp"
+                                    android:inputType="textEmailAddress"
+                                    />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_gr2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnEdit1"
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Guardar" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cancelar"
+                                        android:id="@+id/btnCancelar" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cerrar"
+                                        android:id="@+id/btnClose1" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/tv_directorioPortal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#3F3F3E"
+                            android:text="Directorio Portal Web: "
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/irVideo"
+        android:orderInCategory="1"
+        android:title="Video"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/irAcerca"
+        android:orderInCategory="2"
+        android:title="Acerca de"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/irSalir"
+        android:orderInCategory="3"
+        android:title="Salir"
+        app:showAsAction="never" />
+
+</menu>

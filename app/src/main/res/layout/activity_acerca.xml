@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:background="#CC986F"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#09425C"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/iv_photo"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/foto"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Willian Adalberto Hernandez Aquino. "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="cursive"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="1dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel: (+503)6155-5490"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="1dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail: willian.hernandez19@itca.edu.sv"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="1dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verapaz, San vicente, El Salvador"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="1dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Técnico"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#0e1bd2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ingenieria de sistemas informaticos"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#212121"
+                            android:gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="ITCA-FEPADE"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#252323"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
